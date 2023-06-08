@@ -6,14 +6,14 @@ let busRouteController = require('../controller/routeController')
 
 
 //add bus
-router.post('/addBus', busController.addBus)
 router.get('/getBuses', busController.getBuses)
 
 //add bus route 
-router.post('/addRoute', busRouteController.addRoute)
 router.get('/getRoutes', busRouteController.getRoutes)
 
 //search routes
-router.get('/searchRoutes', busRouteController.searchRoutes)
+router.post('/searchRoutes', busRouteController.searchRoutes)
+
+router.post('/searchRoutes1', busRouteController.searchRoutes1  )
 
 module.exports = router
